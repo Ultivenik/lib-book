@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#myBooks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#myBooks h1{
+    line-height: 5rem;
+    background: rgba(238, 237, 237, 0.45);
+    margin: auto auto;
+    border-bottom: 10px double rgb(190, 190, 190);
+    border-top: 10px double rgb(190, 190, 190);
+    width: 50vw;
+}
+#myBooks h2{
+    margin-top: 10%;
+    font-weight: 500;
+    font-size: 18px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: space-around;
+    align-content: center;
+    margin:20px auto 20px auto;
+}
+label{
+    text-align-last: left;
+    margin: 10px 0 10px 0;
+    font-size: 12px;
+}
+input{
+    height: 3vh;
+    border-radius: 5px 5px 0 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+button{
+    border: 0;
+    height: 2rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    margin: 5px;
+    color: white;
+}
+hr{
+    width: 40%;
+    margin: 0 auto 0 auto;
+}
+#addBook{
+    width: 10rem;
+    border-radius: 28px;
+    height: 2rem;
+    margin: 22px auto 22px auto;
+    background: #21afa2;
+    color: white;
+}
+#searchBook{
+    background: #469487;
+}
+#searchBook:disabled{
+    background: grey;
+}
+#cancelButton{
+    background: #df5a4b;
+}
+.resultContainer{
+    display: flex;
+    flex-direction: column;
+    text-align-last: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+.resultContainer h2{
+    margin: 0 auto;
+    font-size: x-large;
+}
+.fas{
+    cursor: pointer;
+    margin:5px 10px 0 auto;
+    z-index: 100;
+}
+.error{
+    padding: 25px;
+    color: red;
+    font-weight: bold;
+}
+.errorMessage{
+    position: relative;
+    left: 17vw;
+    width: 14rem;
+    bottom: 1vh;
+    font-size: 10px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+}
+.fa-trash {
+    color: red;
+    z-index: 100;
+}
+.img-book{
+    width: 200px;
+}
+.logo{
+    width: 150px;
+}
+#content{
+    margin: 20px 0 20px 0;
+    background: rgb(214, 248, 253);
+}
+#content h2{
+    font-size: 20px;
+    margin: 0;
+    padding: 25px;
+}
+.bookSummary{
+    background: #e0e0e0;
+    border: 1px solid grey;
+    margin: 15px auto;
+    font-size: 10px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    box-shadow: 10px 12px 12px -7px rgba(0,0,0,0.75);
+}
+.bookSummary h3{
+    padding: 0 20px 10px 0;
+}
+.first-para{
+    margin-top: 20px;
+}
+.bookSummary p {
+    line-height: 1em;
+    padding: 5px 40px 5px 20px ;
+}
+.first-para{
+    padding-top: 10px;
+    font-weight: bold;
+}
+.bookSummary img{
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+@media (min-width: 770px) {
+    .resultContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+        width: 70%;
+    }
+    .bookSummary{
+        font-size: 15px;
+        width: 30vw;
+    }
+    .fas{
+        font-size: 20px;
+    }
+    #myBooks h2{
+        font-size: x-large;
+    }
+    .errorMessage{
+        position: relative;
+        left: 10vw;
+        top: -2vh;
+    }
+    #searchBook,
+    #cancelButton{
+        width: 20vw;
+        margin: 5px auto;
+    }
+    label{
+        font-size: 15px;
+    }
+}
